@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-# Check if a character is lowercase
-def islower(c):
-    return ord('a') <= ord(c) <= ord('z')
 
-# Example usage
+def is_lower_case(c):
+    """Check if a character is lowercase."""
+    return 97 <= ord(c) <= 122
+
+# Example usage:
 char_to_check = 'a'
-if islower(char_to_check):
-    print(f"{char_to_check} is lowercase")
-else:
-    print(f"{char_to_check} is not lowercase")
+result = is_lower_case(char_to_check)
+
+print(f"Is '{char_to_check}' a lowercase character? {result}")
